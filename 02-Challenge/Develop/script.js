@@ -1,17 +1,65 @@
-// Assignment Code
+// // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var passwordLength = prompt("Please enter the number of characters you would like in your password")
+function generatePassword(){
+  // Prompt the user for password length
+var passwordLength = prompt("Please enter the number of characters you would like in your password");
 
-var lowercaseLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+if (passwordLength >8<128) prompt("Would you like to include uppercase letters?")
+
+if (lowerCase)
 
 
+  
+  // password lenth 8 < 128 
+    // lowercase, uppercase, numbers, special characters
 
+    // Validate the input
+    // Generate password
+    // Display password to the 
+    
+   return password
+}
 
-
-// Write password to the #password input
 function writePassword() {
-  console.log (ding) }
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  
+  passwordText.value = password;
+}
+
+
+
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+
+
+// var lowercaseLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+// var uppercaseletters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ.'.split]
+
+// var numbers = []
+
+
+
+// var passwordLength = prompt("Please enter the number of characters you would like in your password")
+
+// if userChoice =
+
+
+
+
+// // Write password to the #password input
+// function writePassword() {
+  
+  
+
 // Need the following variables:
 // selected length of the password
 // array of lowercase letters
@@ -39,15 +87,6 @@ function writePassword() {
 
 
   
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
 // ## Acceptance Criteria
 
