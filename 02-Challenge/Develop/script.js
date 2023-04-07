@@ -52,11 +52,11 @@ var numbers = confirm("Would you like to include special characters in your pass
 if (specialchar) {
   password +=specialchar;
 }
-    // Generate password
-    // Display password to the 
-    
-   return password
+
+for (var i=0;i<passwordLength;i++){password=passwordChar[Math.floor(Math.random() *passwordLength)]}
+
 }
+
 
 function writePassword() {
   var password = generatePassword();
