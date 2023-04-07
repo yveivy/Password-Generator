@@ -17,33 +17,29 @@ var passwordLength = prompt("Please enter a the number of characters you would l
 passwordLength = parseInt(passwordLength);
 
 // password lenth 8 < 128 alerts
-if (passwordLength >8) {alert("Password must have more than 7 characters");
+if (passwordLength <8) {alert("Password must have more than 7 characters");
 return "";
 }
 
-if (passwordLength <128) {alert("Password must have less that 128 characters");
+if (passwordLength >128) {alert("Password must have less that 128 characters");
 return "";
+}
+
+// Confirm lowercase letters
+var lowerCaseletters = confirm("Would you like to include lowercase letters in your password?")
+
+if (lowerCaseletters) {
+  password +=lowerCaseletters;
 }
 
 // Confirm uppercase letters
-var lowerCase = confirm("Would you like to include lowercase letters in your password?")
+var upperCaseletters = confirm("Would you like to include uppercase letters in your password?")
 
-if (lowerCase) {
-  password +=lowerCase;
+if (upperCaseletters) {
+  password +=upperCaseletters;
 }
 
 
-
-("Would you like to include uppercase letters?")
-
-if (lowerCase)
-
-
-  
-
-
-
-    // Validate the input
     // Generate password
     // Display password to the 
     
