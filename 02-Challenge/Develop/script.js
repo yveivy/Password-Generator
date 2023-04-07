@@ -11,6 +11,8 @@ var numbers =("0","1","2","3","4","5","6","7","8","9");
 
 var specialchar =("@","#","$","%","^","&","*");
 
+// var password =("")
+
 function generatePassword(){
 // Prompt the user for password length
 var passwordLength = prompt("Please enter a the number of characters you would like, between 8 and 128, in your password.");
@@ -53,7 +55,7 @@ if (specialchar) {
   password +=specialchar;
 }
 
-for (var i=0;i<passwordLength;i++){password=passwordChar[Math.floor(Math.random() *passwordLength)]}
+for (var i=0;i<passwordLength;i++){password=password[Math.floor(Math.random() *passwordLength)]}
 
 }
 
@@ -63,11 +65,12 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   
   passwordText.value = password;
+  
+  return (password);
+
+  console.log(password)
 }
-
-
-
-
+console.log(password)
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
