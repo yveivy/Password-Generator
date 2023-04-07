@@ -1,100 +1,23 @@
-# 03 JavaScript: Password Generator
+# Simplify Structure and Styling
 
-## Your Task
+## Avoiding Div Soup
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+As a developer, it can be quite overwhelming to look at code that is swimming in div soup. An intent gaze scans the page for anything that stands out, but sadly is unable to focus on any one item. The experience can be time consuming and unpleaseant. 
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+But, refactoring code can be a great opportunity to familiarize oneself with the usage and benefits of HTML semantic structure . With this advantage in mind, I gladly dove into this project of refactoring the html code and corresponding styling sheet. The divs were indeed deep, but the structure was there just below the surface.
 
-## User Story
+The challenge of refactoring existing code is finding areas to implement improvements, while making sure that the functionality remains intact and unchanged. This particular code has navigation links and a stylized company name that highlight the unique company brand of the client. The extensive div elements bloat the code and slow it down. It can result in a loss of performance, which in this particular code led to an inoperative link. Refactoring the code made it easier to identify CSS bugs and repair the issue.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+My goal for the project is to improve the codebase overall, making it easier to maintain into the future and improving user experience. In addition to updating the generic div elements with specific HTML elements, I streamlined the CSS by consolidating the selectors and properties and reducing the number of Class attributes.
 
-## Acceptance Criteria
+To increase accesibility, alt attributes were added to images. 
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+### Site Screenshot
+<img
+  src="https://github.com/yveivy/Code-Refactor-One/blob/Main/assets/HoriseonSiteScreenshot.png"
+  alt="Horiseon-Website-Screenshot"
+  title="Horiseon Website"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+#### Deployed Application URL
+](https://yveivy.github.io/Code-Refactor-One/#search-engine-optimization)
