@@ -4,8 +4,7 @@ var generateBtn = document.querySelector("#generate");
 // lowercase, uppercase, numbers, special characters
 var lowercaseLetters = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z");
 
-var uppercaseletters = ("A","B","C","D","E","F","G","H","I","J","K","L","M","N",
-"O","P","Q","R","S","T","U","V","W","X","Y","Z");
+var uppercaseletters = ("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
 
 var numbers =("0","1","2","3","4","5","6","7","8","9");
 
@@ -54,6 +53,8 @@ var numbers = confirm("Would you like to include special characters in your pass
 if (specialchar) {
   password +=specialchar;
 }
+
+
 
 for (var i=0;i<passwordLength;i++){password=password[Math.floor(Math.random() *passwordLength)]}
 
