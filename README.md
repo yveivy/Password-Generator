@@ -1,23 +1,21 @@
-# Simplify Structure and Styling
+# Develop Password Generator
 
-## Avoiding Div Soup
+## Producing a Random Password
 
-As a developer, it can be quite overwhelming to look at code that is swimming in div soup. An intent gaze scans the page for anything that stands out, but sadly is unable to focus on any one item. The experience can be time consuming and unpleaseant. 
+It is no longer possible to use your cat's name as a password for every account. Security breaches are continually being reported, with data leaks as the result. Unscrupulous individuals obtain passwords and user ids from one data breach, and then try the login details on multiple sites. If someone reuses passwords, then it is very likely that their additional personal accounts could be accessed. One of the best security measures that a person can take is to use a unique and random password for each secure site. But it can be difficult to think of one when a prompt requires an immediate response.
 
-But, refactoring code can be a great opportunity to familiarize oneself with the usage and benefits of HTML semantic structure . With this advantage in mind, I gladly dove into this project of refactoring the html code and corresponding styling sheet. The divs were indeed deep, but the structure was there just below the surface.
+To assist in this dilemma, I used JavaScript that provides a user a random password. The application begins by prompting the user to determine their desired password length, with any amount between 8 and 128 characters. It continues by confirming what types of characters they would like to include in their password. They can choose any and all combination of lowercase letters, uppercase letters, numbers and/or special characters. 
 
-The challenge of refactoring existing code is finding areas to implement improvements, while making sure that the functionality remains intact and unchanged. This particular code has navigation links and a stylized company name that highlight the unique company brand of the client. The extensive div elements bloat the code and slow it down. It can result in a loss of performance, which in this particular code led to an inoperative link. Refactoring the code made it easier to identify CSS bugs and repair the issue.
+The specified criteria is returned via the prompts and confirmations and then used to generate a random password that matches the user requests.
 
-My goal for the project is to improve the codebase overall, making it easier to maintain into the future and improving user experience. In addition to updating the generic div elements with specific HTML elements, I streamlined the CSS by consolidating the selectors and properties and reducing the number of Class attributes.
-
-To increase accesibility, alt attributes were added to images. 
+The generate password function is initiated upon the click of the Generate Password button. After following the prompts, the user only has to take note of the random password as displayed in the textbox and retain it for future use.
 
 ### Site Screenshot
 <img
-  src="https://github.com/yveivy/Code-Refactor-One/blob/Main/assets/HoriseonSiteScreenshot.png"
-  alt="Horiseon-Website-Screenshot"
-  title="Horiseon Website"
+  src="https://github.com/yveivy/Unique-Password-Generator/blob/main/Assets/Password-GeneratorScreenshot.png"
+  alt="Deployed Password Generator Application"
+  title="Password Generator site"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 #### Deployed Application URL
-](https://yveivy.github.io/Code-Refactor-One/#search-engine-optimization)
+https://yveivy.github.io/Unique-Password-Generator/
