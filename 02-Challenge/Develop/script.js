@@ -46,6 +46,12 @@ if (numbers) {
   password +=numbers;
 }
 
+// Confirm special characters
+var numbers = confirm("Would you like to include special characters in your password?")
+
+if (specialchar) {
+  password +=specialchar;
+}
     // Generate password
     // Display password to the 
     
