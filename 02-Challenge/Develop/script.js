@@ -39,6 +39,12 @@ if (upperCaseletters) {
   password +=upperCaseletters;
 }
 
+// Confirm numbers
+var numbers = confirm("Would you like to include numbers in your password?")
+
+if (numbers) {
+  password +=numbers;
+}
 
     // Generate password
     // Display password to the 
